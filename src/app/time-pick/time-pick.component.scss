@@ -1,0 +1,105 @@
+$blue-custom: #43b9de;
+$gray-custom: #C7D5E0;
+
+.ngb-tp {
+  display: flex;
+  align-items: center;
+  border: 1px solid $gray-custom;
+  width: 195px;
+  height: 363px;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px #00000024;
+
+  &-input-container {
+    display: flex;
+    width: 100%;
+  }
+
+  &-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &-check-container {
+    display: flex;
+    border-bottom: 1px solid $gray-custom;
+    width: 100%;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+    &-checkbox {
+      margin-right: 16px;
+    }
+  }
+
+  &-chevron {
+    &::before {
+      border-style: solid;
+      border-width: 0.29em 0.29em 0 0;
+      content: "";
+      display: inline-block;
+      height: 0.69em;
+      left: 0.05em;
+      position: relative;
+      top: 0.15em;
+      transform: rotate(-45deg);
+      vertical-align: middle;
+      width: 0.69em;
+      color: grey;
+    }
+
+    &.bottom:before {
+      top: -0.3em;
+      transform: rotate(135deg);
+    }
+  }
+
+  &-input {
+    text-align: center;
+  }
+
+  &-hour,
+  &-minute,
+  &-second,
+  &-meridian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &-spacer {
+    border-left: 1px solid $gray-custom;
+    height: 100%;
+  }
+
+  .ngb-tp-input.form-control {
+    border: none;
+  }
+
+  &-action {
+    display: flex;
+    width: 100%;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $gray-custom;
+    &-check {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    :hover {
+      background-color: $blue-custom;
+    }
+  }
+}
